@@ -1,0 +1,112 @@
+[gd_scene load_steps=14 format=3 uid="uid://ble202432lns0"]
+
+[ext_resource type="Script" path="res://scripts/slime_purple.gd" id="1_i2rgv"]
+[ext_resource type="Texture2D" uid="uid://bc0g0c1nsd7dp" path="res://assets/sprites/slime_purple.png" id="1_jqysv"]
+[ext_resource type="PackedScene" uid="uid://d1lfshi66y8g1" path="res://scene/zona_di_morte.tscn" id="2_vgtoh"]
+[ext_resource type="AudioStream" uid="uid://b6m0avi874n2m" path="res://assets/sounds/hurt.wav" id="4_2gldi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vdg3v"]
+atlas = ExtResource("1_jqysv")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_341er"]
+atlas = ExtResource("1_jqysv")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xtoxw"]
+atlas = ExtResource("1_jqysv")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c6w10"]
+atlas = ExtResource("1_jqysv")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d27by"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vdg3v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_341er")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xtoxw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c6w10")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="Animation" id="Animation_p8ocj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_eyfxn"]
+resource_name = "hit"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c8bvf"]
+_data = {
+"RESET": SubResource("Animation_p8ocj"),
+"hit": SubResource("Animation_eyfxn")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7sr10"]
+radius = 5.02494
+
+[node name="slime purple" type="Node2D"]
+script = ExtResource("1_i2rgv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_d27by")
+autoplay = "default"
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+position = Vector2(1, 5)
+target_position = Vector2(11, 0)
+collision_mask = 4
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+position = Vector2(1, 5)
+target_position = Vector2(-13, 0)
+collision_mask = 4
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_2gldi")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_c8bvf")
+}
+
+[node name="Zona di morte" parent="." instance=ExtResource("2_vgtoh")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Zona di morte"]
+position = Vector2(0, 6)
+shape = SubResource("CircleShape2D_7sr10")

@@ -1,0 +1,14 @@
+AnimationPlayer
+CollisionShape2D
+Area2D
+Label
+Node2D
+TextureButton
+AnimatedSprite2D
+AnimatableBody2D
+Sprite2D
+ColorRect
+Node
+Button
+AudioStreamPlayer2D
+CharacterBody2D

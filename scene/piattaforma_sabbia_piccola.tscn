@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://coroft10ynk34"]
+
+[ext_resource type="Texture2D" uid="uid://bwbsduuhb5p5e" path="res://assets/sprites/platforms.png" id="1_2cpu2"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_j8ke0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rjusm"]
+size = Vector2(16, 10)
+
+[node name="piattaforma sabbia piccola" type="AnimatableBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_j8ke0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2cpu2")
+region_enabled = true
+region_rect = Rect2(0, 15.33, 16.0779, 10.2939)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_rjusm")
+one_way_collision = true

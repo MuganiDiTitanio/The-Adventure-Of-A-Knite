@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://drkdrdwb137h6"]
+
+[ext_resource type="Texture2D" uid="uid://bwbsduuhb5p5e" path="res://assets/sprites/platforms.png" id="1_ta1xg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ywgv"]
+size = Vector2(16, 9.5)
+
+[node name="piattaforma terra piccola" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(33, 18)
+texture = ExtResource("1_ta1xg")
+region_enabled = true
+region_rect = Rect2(0, 29.7262, 16.0171, 13.0349)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(33, 18.25)
+shape = SubResource("RectangleShape2D_8ywgv")
+one_way_collision = true

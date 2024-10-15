@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfavy6rr4c2gc"]
+
+[ext_resource type="Texture2D" uid="uid://bwbsduuhb5p5e" path="res://assets/sprites/platforms.png" id="1_tteex"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qlxpf"]
+size = Vector2(33, 8.9375)
+
+[node name="Piattaforma terra grande" type="AnimatableBody2D"]
+sync_to_physics = false
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_tteex")
+region_enabled = true
+region_rect = Rect2(15.7621, 32.069, 37.2827, 11.6948)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2.5, -1.46875)
+shape = SubResource("RectangleShape2D_qlxpf")
+one_way_collision = true

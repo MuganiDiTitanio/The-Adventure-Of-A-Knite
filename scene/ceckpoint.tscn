@@ -1,0 +1,90 @@
+[gd_scene load_steps=10 format=3 uid="uid://d4flwq162iptu"]
+
+[ext_resource type="Script" path="res://scripts/ceckpoint.gd" id="1_cmmvp"]
+[ext_resource type="Texture2D" uid="uid://bhcp1d8jq3vn7" path="res://assets/sprites/tileflag2.png" id="2_x3vnp"]
+[ext_resource type="Texture2D" uid="uid://8gncputqnvyu" path="res://assets/sprites/tilemapflag.png" id="3_lweu8"]
+[ext_resource type="Texture2D" uid="uid://dqy0alu8y8wwx" path="res://assets/sprites/tilemapflag3.png" id="5_iwawn"]
+
+[sub_resource type="Animation" id="Animation_0mwst"]
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("3_lweu8"), ExtResource("2_x3vnp")]
+}
+
+[sub_resource type="Animation" id="Animation_rawba"]
+resource_name = "activate"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("2_x3vnp"), ExtResource("3_lweu8")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c4q2s"]
+_data = {
+"RESET": SubResource("Animation_0mwst"),
+"activate": SubResource("Animation_rawba")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t8s1v"]
+size = Vector2(7, 42.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_80736"]
+size = Vector2(18, 15)
+
+[node name="ceckpoint" type="Node2D"]
+light_mask = 2
+script = ExtResource("1_cmmvp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Sprite2D")
+libraries = {
+"": SubResource("AnimationLibrary_c4q2s")
+}
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-5.3125, 18)
+scale = Vector2(0.895833, 1)
+texture = ExtResource("5_iwawn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.5, 0)
+scale = Vector2(0.944444, 1)
+texture = ExtResource("3_lweu8")
+region_enabled = true
+region_rect = Rect2(0.284218, -0.328865, 17.8081, 18.4737)
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(0.5, 0)
+scale = Vector2(0.944444, 1)
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-5.65396, 8)
+scale = Vector2(1.05882, 1)
+shape = SubResource("RectangleShape2D_t8s1v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.495498, -1)
+scale = Vector2(1.05882, 1)
+shape = SubResource("RectangleShape2D_80736")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

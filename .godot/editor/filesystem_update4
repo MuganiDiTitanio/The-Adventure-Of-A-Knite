@@ -1,0 +1,17 @@
+res://scene/gioco.tscn
+res://scene/player.tscn
+res://scene/ceckpoint.tscn
+res://scene/zona_di_morte.tscn
+res://scene/piattaforma_erba_grande.tscn
+res://scene/piattaforma_sabbia_grande.tscn
+res://scene/piattaforma_terra_grande.tscn
+res://scene/piattaforma_sabbia_piccola.tscn
+res://scene/uva.tscn
+res://scene/piattaforma_terra_piccola.tscn
+res://scene/slime.tscn
+res://scene/slime_purple.tscn
+res://scene/coin.tscn
+res://scene/piattaforma_neve.tscn
+res://scene/music.tscn
+res://scripts/ceckpoint.gd
+res://scripts/GameManager.gd
