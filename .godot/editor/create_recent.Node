@@ -1,5 +1,5 @@
-AnimationPlayer
 CollisionShape2D
+AnimationPlayer
 Area2D
 Label
 Node2D

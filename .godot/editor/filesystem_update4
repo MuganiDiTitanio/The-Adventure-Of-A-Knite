@@ -13,5 +13,3 @@ res://scene/slime_purple.tscn
 res://scene/coin.tscn
 res://scene/piattaforma_neve.tscn
 res://scene/music.tscn
-res://scripts/ceckpoint.gd
-res://scripts/GameManager.gd

@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1728995481
-export_presets.cfg::TextFile::-1::1728506887::0::1::::<><>::
+::res://::1729428912
+export_presets.cfg::TextFile::-1::1728996357::0::1::::<><>::
 ::res://assets/::1726593143
 LICENSE & CREDITS.txt::TextFile::-1::1724858814::0::1::::<><>::
 ::res://assets/fonts/::1724858844
@@ -28,33 +28,35 @@ tilemap.png::CompressedTexture2D::3793348587616601971::1726495361::1726495367::1
 tilemapflag3.png::CompressedTexture2D::8333347150390121731::1726498907::1727814481::1::::<><>::
 tilemapflag.png::CompressedTexture2D::2329411818704732128::1726498203::1727814481::1::::<><>::
 world_tileset.png::CompressedTexture2D::4647280650491072770::1724858814::1724858844::1::::<><>::
-::res://Gioco/::1727967824
-::res://Gioco/HTML/::1728941203
-The Adventure Of A Knite.apple-touch-icon.png::CompressedTexture2D::3551193767197171079::1728506887::1728508765::1::::<><>::
-The Adventure Of A Knite.icon.png::CompressedTexture2D::2987473113778380157::1728506887::1728508765::1::::<><>::
-The Adventure Of A Knite.png::CompressedTexture2D::6061311780896198769::1728506887::1728508765::1::::<><>::
-::res://Gioco/Windows/::1728487686
-::res://scene/::1728508797
-ceckpoint.tscn::PackedScene::9205768461722308774::1728508797::0::1::::<><>::res://scripts/ceckpoint.gd<>uid://bhcp1d8jq3vn7::::res://assets/sprites/tileflag2.png<>uid://8gncputqnvyu::::res://assets/sprites/tilemapflag.png<>uid://dqy0alu8y8wwx::::res://assets/sprites/tilemapflag3.png
-coin.tscn::PackedScene::5528470383481832650::1728508797::0::1::::<><>::res://scripts/coin.gd<>uid://dpk7fjcu2ngj8::::res://assets/sprites/coin.png<>uid://cc1qddri3fhtt::::res://assets/sounds/coin.wav
-gioco.tscn::PackedScene::7415332491494505276::1728508796::0::1::::<><>::res://scripts/GameManager.gd<>uid://bquobu6kh6hnu::::res://scene/player.tscn<>uid://b7hgbesj7lqy1::::res://assets/sprites/world_tileset.png<>uid://vsueaf8wd2an::::res://scene/piattaforma_sabbia_grande.tscn<>uid://dfavy6rr4c2gc::::res://scene/piattaforma_terra_grande.tscn<>uid://d2n0h03tlooxr::::res://assets/fonts/PixelOperator8-Bold.ttf<>res://scripts/camera_2d.gd<>uid://ck1bdnaurhpyw::::res://scene/coin.tscn<>uid://d1lfshi66y8g1::::res://scene/zona_di_morte.tscn<>uid://dnae1tif12jvq::::res://scene/piattaforma_erba_grande.tscn<>uid://d35llsmou6k60::::res://scene/uva.tscn<>uid://dp45be686yr1n::::res://assets/fonts/PixelOperator8.ttf<>uid://cs60y1ml8i0dq::::res://scene/slime.tscn<>uid://ble202432lns0::::res://scene/slime_purple.tscn<>uid://d4flwq162iptu::::res://scene/ceckpoint.tscn<>res://scripts/quit.gd<>uid://oclxh0spi38y::::res://scene/piattaforma_neve.tscn<>uid://d1vm060tgt52a::::res://assets/sprites/fruit.png<>uid://dpk7fjcu2ngj8::::res://assets/sprites/coin.png<>res://scripts/quit_principal.gd
-music.tscn::PackedScene::3271579632915577632::1728508797::0::1::::<><>::uid://cprb1tqlh1ihy::::res://assets/music/time_for_adventure.mp3
-piattaforma_erba_grande.tscn::PackedScene::8072007327551399574::1728508797::0::1::::<><>::uid://bwbsduuhb5p5e::::res://assets/sprites/platforms.png
-piattaforma_neve.tscn::PackedScene::987481933742608666::1728508797::0::1::::<><>::uid://bwbsduuhb5p5e::::res://assets/sprites/platforms.png
-piattaforma_sabbia_grande.tscn::PackedScene::1512346008255644497::1728508797::0::1::::<><>::uid://bwbsduuhb5p5e::::res://assets/sprites/platforms.png
-piattaforma_sabbia_piccola.tscn::PackedScene::5791439606282975365::1728508797::0::1::::<><>::uid://bwbsduuhb5p5e::::res://assets/sprites/platforms.png
-piattaforma_terra_grande.tscn::PackedScene::7511525840468073850::1728508797::0::1::::<><>::uid://bwbsduuhb5p5e::::res://assets/sprites/platforms.png
-piattaforma_terra_piccola.tscn::PackedScene::8373328871578199597::1728508797::0::1::::<><>::uid://bwbsduuhb5p5e::::res://assets/sprites/platforms.png
-player.tscn::PackedScene::3551582659496325458::1728508797::0::1::::<><>::res://scripts/player.gd<>uid://d4mu117myojfi::::res://assets/sprites/knight.png<>uid://dii8kgmt55lp8::::res://assets/sounds/jump.wav
-slime.tscn::PackedScene::6101798431808506122::1728508797::0::1::::<><>::uid://doh13cwekciuq::::res://assets/sprites/slime_green.png<>res://scripts/slime.gd<>uid://d1lfshi66y8g1::::res://scene/zona_di_morte.tscn<>uid://b6m0avi874n2m::::res://assets/sounds/hurt.wav
-slime_purple.tscn::PackedScene::3168440942618516217::1728508797::0::1::::<><>::res://scripts/slime_purple.gd<>uid://bc0g0c1nsd7dp::::res://assets/sprites/slime_purple.png<>uid://d1lfshi66y8g1::::res://scene/zona_di_morte.tscn<>uid://b6m0avi874n2m::::res://assets/sounds/hurt.wav
-uva.tscn::PackedScene::9187169500841397463::1728508797::0::1::::<><>::res://scripts/uva.gd<>uid://d1vm060tgt52a::::res://assets/sprites/fruit.png
-zona_di_morte.tscn::PackedScene::9007216251689715706::1728508797::0::1::::<><>::res://scripts/zona_di_morte.gd
-::res://scripts/::1728486917
+::res://desktop-tutorial/::1728996955
+README.md::TextFile::-1::1728996955::0::1::::<><>::
+::res://Game/::1727967824
+::res://Game/HTML/::1728941203
+The Adventure Of A Knite.apple-touch-icon.png::CompressedTexture2D::3551193767197171079::1728506887::1729429478::1::::<><>::
+The Adventure Of A Knite.icon.png::CompressedTexture2D::2987473113778380157::1728506887::1729429478::1::::<><>::
+The Adventure Of A Knite.png::CompressedTexture2D::6061311780896198769::1728506887::1729429478::1::::<><>::
+::res://Game/Windows/::1729429476
+::res://scene/::1729428607
+ceckpoint.tscn::PackedScene::9205768461722308774::1729428607::0::1::::<><>::res://scripts/ceckpoint.gd<>uid://bhcp1d8jq3vn7::::res://assets/sprites/tileflag2.png<>uid://8gncputqnvyu::::res://assets/sprites/tilemapflag.png<>uid://dqy0alu8y8wwx::::res://assets/sprites/tilemapflag3.png
+coin.tscn::PackedScene::5528470383481832650::1729428607::0::1::::<><>::res://scripts/coin.gd<>uid://dpk7fjcu2ngj8::::res://assets/sprites/coin.png<>uid://cc1qddri3fhtt::::res://assets/sounds/coin.wav
+gioco.tscn::PackedScene::7415332491494505276::1729428607::0::1::::<><>::res://scripts/GameManager.gd<>uid://bquobu6kh6hnu::::res://scene/player.tscn<>uid://b7hgbesj7lqy1::::res://assets/sprites/world_tileset.png<>uid://vsueaf8wd2an::::res://scene/piattaforma_sabbia_grande.tscn<>uid://dfavy6rr4c2gc::::res://scene/piattaforma_terra_grande.tscn<>uid://d2n0h03tlooxr::::res://assets/fonts/PixelOperator8-Bold.ttf<>res://scripts/camera_2d.gd<>uid://ck1bdnaurhpyw::::res://scene/coin.tscn<>uid://d1lfshi66y8g1::::res://scene/zona_di_morte.tscn<>uid://dnae1tif12jvq::::res://scene/piattaforma_erba_grande.tscn<>uid://d35llsmou6k60::::res://scene/uva.tscn<>uid://dp45be686yr1n::::res://assets/fonts/PixelOperator8.ttf<>uid://cs60y1ml8i0dq::::res://scene/slime.tscn<>uid://ble202432lns0::::res://scene/slime_purple.tscn<>uid://d4flwq162iptu::::res://scene/ceckpoint.tscn<>res://scripts/quit.gd<>uid://oclxh0spi38y::::res://scene/piattaforma_neve.tscn<>uid://d1vm060tgt52a::::res://assets/sprites/fruit.png<>uid://dpk7fjcu2ngj8::::res://assets/sprites/coin.png<>res://scripts/quit_principal.gd
+music.tscn::PackedScene::3271579632915577632::1729428607::0::1::::<><>::uid://cprb1tqlh1ihy::::res://assets/music/time_for_adventure.mp3
+piattaforma_erba_grande.tscn::PackedScene::8072007327551399574::1729428607::0::1::::<><>::uid://bwbsduuhb5p5e::::res://assets/sprites/platforms.png
+piattaforma_neve.tscn::PackedScene::987481933742608666::1729428607::0::1::::<><>::uid://bwbsduuhb5p5e::::res://assets/sprites/platforms.png
+piattaforma_sabbia_grande.tscn::PackedScene::1512346008255644497::1729428607::0::1::::<><>::uid://bwbsduuhb5p5e::::res://assets/sprites/platforms.png
+piattaforma_sabbia_piccola.tscn::PackedScene::5791439606282975365::1729428607::0::1::::<><>::uid://bwbsduuhb5p5e::::res://assets/sprites/platforms.png
+piattaforma_terra_grande.tscn::PackedScene::7511525840468073850::1729428607::0::1::::<><>::uid://bwbsduuhb5p5e::::res://assets/sprites/platforms.png
+piattaforma_terra_piccola.tscn::PackedScene::8373328871578199597::1729428607::0::1::::<><>::uid://bwbsduuhb5p5e::::res://assets/sprites/platforms.png
+player.tscn::PackedScene::3551582659496325458::1729428607::0::1::::<><>::res://scripts/player.gd<>uid://d4mu117myojfi::::res://assets/sprites/knight.png<>uid://dii8kgmt55lp8::::res://assets/sounds/jump.wav
+slime.tscn::PackedScene::6101798431808506122::1729428607::0::1::::<><>::uid://doh13cwekciuq::::res://assets/sprites/slime_green.png<>res://scripts/slime.gd<>uid://d1lfshi66y8g1::::res://scene/zona_di_morte.tscn<>uid://b6m0avi874n2m::::res://assets/sounds/hurt.wav
+slime_purple.tscn::PackedScene::3168440942618516217::1729428607::0::1::::<><>::res://scripts/slime_purple.gd<>uid://bc0g0c1nsd7dp::::res://assets/sprites/slime_purple.png<>uid://d1lfshi66y8g1::::res://scene/zona_di_morte.tscn<>uid://b6m0avi874n2m::::res://assets/sounds/hurt.wav
+uva.tscn::PackedScene::9187169500841397463::1729428607::0::1::::<><>::res://scripts/uva.gd<>uid://d1vm060tgt52a::::res://assets/sprites/fruit.png
+zona_di_morte.tscn::PackedScene::9007216251689715706::1729428607::0::1::::<><>::res://scripts/zona_di_morte.gd
+::res://scripts/::1728996219
 camera_2d.gd::GDScript::-1::1727884213::0::1::::<>Camera2D<>::
-ceckpoint.gd::GDScript::-1::1727967113::0::1::::<>Node2D<>::
+ceckpoint.gd::GDScript::-1::1728996219::0::1::::<>Node2D<>::
 coin.gd::GDScript::-1::1727802602::0::1::::<>Area2D<>::
-GameManager.gd::GDScript::-1::1728142563::0::1::::<>Node<>::
+GameManager.gd::GDScript::-1::1728996219::0::1::::<>Node<>::
 player.gd::GDScript::-1::1727803731::0::1::::Player<>CharacterBody2D<>::
 quit.gd::GDScript::-1::1727817310::0::1::::<>Node<>::
 quit_principal.gd::GDScript::-1::1727891746::0::1::::<>Node2D<>::
@@ -62,3 +64,4 @@ slime.gd::GDScript::-1::1727804028::0::1::::<>Node2D<>::
 slime_purple.gd::GDScript::-1::1727804111::0::1::::<>Node2D<>::
 uva.gd::GDScript::-1::1727887965::0::1::::<>Area2D<>::
 zona_di_morte.gd::GDScript::-1::1727892359::0::1::::<>Area2D<>::
+::res://The-Adventure-Of-A-Knite/::1728996670
